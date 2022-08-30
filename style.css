@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1400px;
+    
+}
+
+header {
+    display: flex;
+    border-bottom: 3px solid rgb(0,0,0,0.1) ;
+    border-radius: 0;
+    
+}
+
+.header_logo {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 30%;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+header nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;    
+    margin-right: 20px;   
+    border-radius: 6px;     
+}
+.menu_ativo {
+    background-color:#0A99FE;
+    color: white;
+}
+.menu_inativo {
+    background-color:rgb(10, 153, 254, 0.1);
+    
+    color: #0A99FE;
+}
+
+main {
+    
+}
+
+main .paintings {
+    
+    
+}
+main .paintings_list { 
+    display: flex;    
+    height: 275px;
+}
+
+.paintings .img_produto {
+    height: 50%;
+    
+}
+.img_produto img {    
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    
+}
+.card_produto {
+    width: 207px;
+    height: 100%;
+    margin-right: 20px;
+    
+    border-radius: 6px;
+}
+
+.paintings .descricao_produto {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0dede;    
+    
+}
+
+.descricao_produto h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: #868383;
+}
+
+
+main .action_figs {
+    
+}
+
+main .fig_list {
+    height: 275px;
+    display: flex;
+}
+
