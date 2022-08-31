@@ -60,10 +60,18 @@ function insereItens() {
             let imagemProduto = document.createElement('img')
             imagemProduto.src = itemAtual['linkImagem']
             let divDescricao = document.createElement('div')
+            
             divDescricao.className = 'descricao_produto'
             li.appendChild(divImg)
             divImg.appendChild(imagemProduto)            
-            li.appendChild(divDescricao)            
+            li.appendChild(divDescricao) 
+            let h2 = document.createElement('h2')           
+            let h3 = document.createElement('h3')
+            h2.innerText = itemAtual['nomeItem']
+            h3.innerText = `R$ ${itemAtual['valorItem']},00`
+            divDescricao.appendChild(h2)
+            divDescricao.appendChild(h3)
+
 
         }
         else if(itemAtual['tipoItem'] == 'actionFigure') {
@@ -80,11 +88,19 @@ function insereItens() {
             let imagemProduto = document.createElement('img')
             imagemProduto.src = itemAtual['linkImagem']
             let divDescricao = document.createElement('div')
+            
             divDescricao.className = 'descricao_produto'
             li.appendChild(divImg)
             divImg.appendChild(imagemProduto)            
             li.appendChild(divDescricao)            
-
+            let h2 = document.createElement('h2')           
+            let h3 = document.createElement('h3')
+            h2.innerText = itemAtual['nomeItem']
+            h3.innerText = `R$ ${itemAtual['valorItem']},00`
+            divDescricao.appendChild(h2)
+            divDescricao.appendChild(h3)
         }
     }
 }
+
+insereItens()
