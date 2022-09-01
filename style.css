@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1500px;
     
 }
 
@@ -59,10 +59,6 @@ header nav ul li {
     background-color:rgb(10, 153, 254, 0.1);
     
     color: #0A99FE;
-}
-
-main {
-    
 }
 
 main .paintings {
